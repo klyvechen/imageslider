@@ -1,0 +1,85 @@
+<zk>
+	<window title="Hello World!!" border="normal"
+		apply="test.ctrl.DemoWindowComposer">
+		<!-- 
+			
+		-->
+		<vbox>
+			<menubar id="menubar" width="100%">
+				<menu id="addIronman1" label="Add Ironman" image="https://www.zkoss.org/zkdemo/widgets/menu/drop-down_menu/img/file_new.png" >
+	                <menupopup>
+	                    <menuitem label="ironman1" onClick="" image="image/ironman-01.jpg" />
+	                    <menuitem label="ironman2" onClick="" image="image/ironman-02.jpg" />
+	                    <menuitem label="ironman3" onClick="" image="image/ironman-03.jpg" />
+	                    <menuitem label="ironman4" onClick="" image="image/ironman-04.jpg" />
+	                    <menuitem label="ironman5" onClick="" image="image/ironman-05.jpg" />
+	                </menupopup>
+            	</menu>
+			</menubar>
+			<imageSlider id="imageSlider" onSelect='self.getSelectedItem()' viewportSize="5" >
+				<image src="image/ironman-01.jpg" class="ironman" />
+				<image src="image/ironman-02.jpg" class="ironman" />
+				<image src="image/ironman-03.jpg" class="ironman" />
+				<image src="image/ironman-04.jpg" class="ironman" />
+				<image src="image/ironman-05.jpg" class="ironman" />
+				<!--  <button></button>-->
+			</imageSlider>
+			<hbox>
+				<vbox>
+					<button id="addIronman" label = "add ironman" onClick=""></button>
+			  		<listbox id="whichIronman" mold="select">
+			            <listitem label="ironman1" image="image/ironman-01.jpg" ></listitem>
+			            <listitem label="ironman2" image="image/ironman-02.jpg" ></listitem>
+			            <listitem label="ironman3" image="image/ironman-03.jpg" ></listitem>
+			            <listitem label="ironman4" image="image/ironman-04.jpg" selected="true"></listitem>
+			            <listitem label="ironman5" image="image/ironman-05.jpg" ></listitem>
+			        </listbox>
+		        </vbox>
+		        <vbox>
+					<button id="removeSelectImg" label = "remove SelectedImg" onClick=""></button>
+				</vbox>
+				<vbox>
+					<button id="setViewportSize" label = "change ViewportSize" onClick=""></button>
+			  		<listbox id="viewportSizeNo" mold="select">
+			            <listitem label="1" />
+			            <listitem label="2" />
+			            <listitem label="3" />
+			            <listitem label="4" />
+			            <listitem label="5" selected="true"/>
+			            <listitem label="6" />
+			            <listitem label="7" />
+			            <listitem label="8" />
+			            <listitem label="9"  />
+			            <listitem label="10" />
+			        </listbox>
+		        </vbox>
+		        <vbox>
+					<button id="setImageSize" label = "change image size" onClick=""></button>
+  					<hbox><textbox id="imageSizeInput" width="100px" />px</hbox>
+		        </vbox>
+	
+				<vbox>
+					<button id="selectImg" label = "select image by item" onClick=""></button>
+			  		<listbox id="selectImgId" mold="select">
+			            <listitem label="0" />
+			            <listitem label="1" />
+			            <listitem label="2" />
+			            <listitem label="3" />
+			            <listitem label="4" selected="true" />
+			            <listitem label="5" />
+			            <listitem label="6" />
+			            <listitem label="7" />
+			            <listitem label="8" />
+			            <listitem label="9" />
+
+			        </listbox>
+		        </vbox>
+			</hbox>
+
+		</vbox>
+<!-- 
+		 -->
+	
+	</window>
+
+</zk>
